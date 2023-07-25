@@ -1,5 +1,7 @@
 import React from "react";
-// import './infoPanel.scss';
+import DividerShort from './DividerShort';
+import TextAarea from './TextAarea';
+import './calcBlock.scss';
 
 interface Props{
     operationStatus: number;
@@ -8,23 +10,21 @@ interface Props{
 function CalcBlock(props: Props) {
 
     return (
-        <form className="calculator__inputField">
-            <div className="calc-status">
-                <span className="calc-status_text" id="status25">{props.operationStatus}</span>
-                
-                {/* <svg className="calc-dividerShort_img">
-                    <use href="#dividerShort" />
-                </svg> */}
+        <form className="calcBlock">
+            <div className="calcBlock__status">
+                <span className="calcBlock__statusText" id="status25">{props.operationStatus}</span>
+                <DividerShort className="calcBlock__dividerShort"/>
             </div>
 
-            <div className="calc-input_background">
-                <input className="calc-input" type="number" />
+            <div className="calcBlock__input">
+                <input className="calcBlock__inputField" type="number" />
                 {/* <svg className="calc-textAarea_img">
                     <use href="#textAarea" />
                 </svg> */}
+                <TextAarea className="calcBlock__textAarea"/>
             </div>
 
-            <span className="calc-result"><span id="result25">0</span> р.</span>
+            <span className="calcBlock__result"><span id="result25">0</span> р.</span>
         </form>
     )
 }

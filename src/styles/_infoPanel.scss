@@ -2,7 +2,7 @@
     position: relative;
     // background-color: var(--Background);
     background-color: #F6F7EB;
-    max-width: 100%;
+    max-width: 1440px;
     margin: auto;
     padding-top: 60px;
     display: flex;
@@ -175,5 +175,49 @@
         border: none;
         border-radius: 10px;
         cursor: pointer;
+    }
+
+    &__dividerVertical {
+        min-width: 2px;
+        height: 485px;
+        // background-color: var(--Elements);
+        background-color: #5C415D;
+        margin-top: 35px;
+    }
+
+    &__statContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 60px 0;
+    }
+
+    &__schedule {
+        height: 255px;
+        width: 100%;
+        margin-top: 75px;
+        line-height: 255px;
+        text-align: center;
+        background-color: #FFFC31;
+    }
+
+    &__flexContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    &__statFlexElement{
+        margin-bottom: 20px;
+    }
+
+    &__calcData{
+        font-weight: 700;
     }
 }

@@ -1,11 +1,11 @@
 import React from "react";
-import './infoPanel.scss';
+// import './infoPanel.scss';
 import Calculator from './components/Calculator';
 
 function InfoPanel() {
 
     return (
-        <div className="InfoPanel">
+        <div className="infoPanel">
 
             <Calculator/>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import './header.scss';
+// import './header.scss';
 import AccountIco from './components/AccountIco'
 
 function Header() {

@@ -1,4 +1,5 @@
 import React from "react";
+import Arrow from '../../../public/arrow.svg'
 
 function Calendar() {
 
@@ -17,15 +18,17 @@ function Calendar() {
                 </div>
 
                 <div className="calendar__settingsPanelflexContainer">
-                    <svg className="calendar__switchButton">
+                    {/* <svg className="calendar__switchButton">
                         <use href="#arrow" />
-                    </svg>
+                    </svg> */}
 
+                    {/* тут будет кнопка переключения месяца */}
                     <span className="calendar__month">Октябрь</span>
+                    {/* и тут будет кнопка переключения месяца */}
 
-                    <svg className="calendar__switchButton calendar__switchButton_right">
+                    {/* <svg className="calendar__switchButton calendar__switchButton_right">
                         <use href="#arrow" />
-                    </svg>
+                    </svg> */}
                 </div>
             </div>
 
@@ -38,6 +41,8 @@ function Calendar() {
                 <span className="calendar__daysContainer">сб</span>
                 <span className="calendar__daysContainer">вс</span>
             </div>
+
+            
         </div>
     )
 }

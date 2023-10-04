@@ -1,5 +1,10 @@
 import React from "react";
-import Arrow from '../../../public/arrow.svg'
+
+import Switcher from './modules/Switcher/Switcher';
+import WeekPanel from './modules/WeekPanel/WeekPanel';
+
+import DaysPanel from './modules/DaysPanel/DaysPanel';
+// import Arrow from '../../../public/arrow.svg'
 
 function Calendar() {
 
@@ -17,32 +22,13 @@ function Calendar() {
                     <input className="calendar__buttonSaveSetting" type="button" value="Настроить" />
                 </div>
 
-                <div className="calendar__settingsPanelflexContainer">
-                    {/* <svg className="calendar__switchButton">
-                        <use href="#arrow" />
-                    </svg> */}
-
-                    {/* тут будет кнопка переключения месяца */}
-                    <span className="calendar__month">Октябрь</span>
-                    {/* и тут будет кнопка переключения месяца */}
-
-                    {/* <svg className="calendar__switchButton calendar__switchButton_right">
-                        <use href="#arrow" />
-                    </svg> */}
-                </div>
+                <Switcher />
             </div>
 
-            <div className="calendar__daysBackground">
-                <span className="calendar__daysContainer">пн</span>
-                <span className="calendar__daysContainer">вт</span>
-                <span className="calendar__daysContainer">ср</span>
-                <span className="calendar__daysContainer">чт</span>
-                <span className="calendar__daysContainer">пт</span>
-                <span className="calendar__daysContainer">сб</span>
-                <span className="calendar__daysContainer">вс</span>
-            </div>
+            <WeekPanel />
 
-            
+            <DaysPanel />
+
         </div>
     )
 }

@@ -1,9 +1,10 @@
 .calendar {
     width: 1440px;
-    height: 500px;
+    // height: 500px;
     // background-color: var(--Background);
     background-color: #F6F7EB;
     margin: auto;
+    padding-bottom: 5%;
 
     &__dividerHorContainer {
         background-color: #F6F7EB;
@@ -93,5 +94,25 @@
         font-size: 24px;
         line-height: 50px;
         text-align: center;
+    }
+
+    &__daysPanel {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__day {
+        margin: 0;
+        max-width: 188px;
+        width: 14.3%;
+        height: 120px;
+        background-color: #21546D;
+        border: 1px solid #000016;
+        border-radius: 5px;
+        box-sizing: border-box;
     }
 }

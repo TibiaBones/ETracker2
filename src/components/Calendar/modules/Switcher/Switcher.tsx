@@ -1,20 +1,17 @@
 import React from "react";
+import Arrow from '../../../../icons/Arrow';
 
 function Switcher() {
-    return(
+    return (
         <div className="calendar__settingsPanelflexContainer">
-                    {/* <svg className="calendar__switchButton">
-                        <use href="#arrow" />
-                    </svg> */}
 
-                    {/* тут будет кнопка переключения месяца */}
-                    <span className="calendar__month">Октябрь</span>
-                    {/* и тут будет кнопка переключения месяца */}
+            <Arrow className="calendar__switchButton" />
 
-                    {/* <svg className="calendar__switchButton calendar__switchButton_right">
-                        <use href="#arrow" />
-                    </svg> */}
-                </div>
+            <span className="calendar__month">Октябрь</span>
+
+            <Arrow className="calendar__switchButton calendar__switchButton_right" />
+
+        </div>
     )
 }
 

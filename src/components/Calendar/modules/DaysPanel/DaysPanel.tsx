@@ -1,7 +1,7 @@
 import React from "react";
 import Day from '../Day/Day';
 
-function DaysPanel() {
+export default function DaysPanel() {
     return (
         <div className='calendar__daysPanel'>
             <Day />
@@ -56,6 +56,4 @@ function DaysPanel() {
         </div>
     )
 }
-
-export default DaysPanel;
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-function WeekPanel() {
+export default function WeekPanel() {
     return (
         <div className="calendar__daysBackground">
             <span className="calendar__daysContainer">пн</span>
@@ -14,4 +14,3 @@ function WeekPanel() {
     )
 }
 
-export default WeekPanel;

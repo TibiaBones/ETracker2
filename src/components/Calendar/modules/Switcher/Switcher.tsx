@@ -1,7 +1,7 @@
 import React from "react";
 import Arrow from '../../../../icons/Arrow';
 
-function Switcher() {
+export default function Switcher() {
     return (
         <div className="calendar__settingsPanelflexContainer">
 
@@ -14,5 +14,3 @@ function Switcher() {
         </div>
     )
 }
-
-export default Switcher;

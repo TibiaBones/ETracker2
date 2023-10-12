@@ -4,7 +4,7 @@ interface SwitcherProps {
     className?: string;
 }
 
-function Arrow({className} : SwitcherProps) {
+export default function Arrow({className} : SwitcherProps) {
     return (
         <div className={className}>
             <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,4 +16,3 @@ function Arrow({className} : SwitcherProps) {
     )
 }
 
-export default Arrow;

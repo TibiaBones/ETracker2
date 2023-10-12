@@ -4,9 +4,8 @@ import Switcher from './modules/Switcher/Switcher';
 import WeekPanel from './modules/WeekPanel/WeekPanel';
 
 import DaysPanel from './modules/DaysPanel/DaysPanel';
-// import Arrow from '../../../public/arrow.svg'
 
-function Calendar() {
+export default function Calendar() {
 
     return (
         <div className="calendar">
@@ -32,5 +31,3 @@ function Calendar() {
         </div>
     )
 }
-
-export default Calendar;

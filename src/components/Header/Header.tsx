@@ -8,7 +8,7 @@ function Header() {
         <div className="header">
             <span className="header__title">ETracker</span>
 
-            <input className="header__date" id="datepicker" type="text" value="03.12.2022" />
+            <input className="header__date" id="datepicker" type="text" placeholder="03.12.2022" />
 
             <div className="header__account">
                 <a className="header__accountText" href="#">Вход / Регистрация</a>

@@ -1,7 +1,3 @@
-interface CreateDateParams {
-    locale?: string;
-    date?: Date;
-}
 
 export const getWeekNumber = (date: Date) => {
     const firstDayOfYear = new Date(date.getFullYear(), 0, 1)
